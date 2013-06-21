@@ -11,7 +11,8 @@ function isPrime(num) {
 var fs = require('fs');
 var outfile = "hello.txt";
 var result = new Array();
-for(var i=2, count=0; count < 99; i++) {
+var top = 100;
+for(var i=2, count=0; count < top; i++) {
 	if(isPrime(i)) {
 		result.push(i);
 		count++
